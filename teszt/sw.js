@@ -1,5 +1,5 @@
 // Offline cache for the Fűvágás app. Version changes with every build.
-const CACHE = "fuvagas-36d6e4c76d32";
+const CACHE = "fuvagas-14c5f73edee1";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./apple-touch-icon.png", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => {
